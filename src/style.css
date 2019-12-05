@@ -1,7 +1,40 @@
 a { text-decoration: none; }
 
 body {
-    background-image: url("img/fondo.png");
-    background-repeat: no-repeat; 
-    background-size: cover;   
+  background-image: url("img/fondo.png");
+  background-repeat: no-repeat; 
+  background-size: cover;   
 }
+
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin:50px auto;
+}
+
+.header {
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  width: 550px;
+  height: 150px;
+  background-color: white;
+  font-family: 'Abel', sans-serif;
+  border-radius: 30px;
+  align-items:center ; 
+}
+
+
+
