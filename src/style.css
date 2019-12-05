@@ -1,3 +1,63 @@
 
+body {
+  background-image: url("img/fondo.png");
+  background-repeat: no-repeat; 
+  background-size: cover;   
+}
+
+
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin:50px auto;
+}
+
+.header {
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  width: 550px;
+  height: 150px;
+  background-color: white;
+  font-family: 'Abel', sans-serif;
+  border-radius: 30px;
+  align-items:center ; 
+  text-align: center;
+}
+
+#screenTwo{
+  visibility:hidden; 
+  display:none;
+}
+
+#playBtn{
+  width:80px;
+  height:80px;
+  background-color:#88c481;
+  margin: 5px;
+  padding:10px;
+  border-radius: 50px;
+  font-size:11px;
+}
+#playBtn:hover{
+  opacity: 0.50;
+  background-color: rgb(16, 207, 80);
+  
+}
+
+
+
 
 
