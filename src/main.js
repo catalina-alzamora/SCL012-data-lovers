@@ -13,6 +13,8 @@ console.log(Object.keys(POKEMON [0]));
 //viendo valor de key-tipo de bulbasaur
 console.log(POKEMON[0].type);
 
+
+
 /*Probando si recorre
 for (let i = 0; i <= POKEMON.length; i++) {
     console.log(POKEMON[i].type);
@@ -29,6 +31,13 @@ for (let i = 0; i <= POKEMON.length; i++) {
    return grassPokemon
 }
 
+//función de filtrado
+let filteredPokemon = POKEMON.filter(element => element.type.includes("Fire"));
+console.log("filteredPokemon => ", filteredPokemon);
+
+/*import {filteredPokemon} from './src/data.js';
+console.log("filteredPokemon => ", filteredPokemon);*/
+
 
 
     //función de cambio de pantalla con el botón de ingresar
@@ -42,6 +51,8 @@ document.getElementById('playBtn').addEventListener('click', () => {
     let print= document.getElementById ("pokemonList");
     //imprimiendo nombre de primer pokemon
     print.innerHTML= POKEMON[0].name;
+    
 
-
+//probando si funciona grasspokemon
+  grassPokemon ();
 })
