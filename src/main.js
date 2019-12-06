@@ -31,6 +31,7 @@ for (let i = 0; i <= POKEMON.length; i++) {
 
 
 
+
     //función de cambio de pantalla con el botón de ingresar
 document.getElementById('playBtn').addEventListener('click', () => {
     document.getElementById('screenTwo').style.visibility='visible';
@@ -43,5 +44,5 @@ document.getElementById('playBtn').addEventListener('click', () => {
     //imprimiendo nombre de primer pokemon
     print.innerHTML= POKEMON[0].name;
 
-
+    
 })
