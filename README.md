@@ -53,25 +53,25 @@ Las historias de usuario están basadas en las necesidades que tiene el usuario 
 
 ### Historia de usuario n°1
 
-    "YO: jugador de pokemon Go.
-     QUIERO: saber los tipos de pokemon.
-     PARA: ver sus características."
+    YO: jugador de pokemon Go.
+    QUIERO: saber los tipos de pokemon.
+    PARA: ver sus características.
 
 
-  # Criterios de aceptación:
+  ### Criterios de aceptación:
 
-    -Usuario puede ingresar a la aplicación.
-    -Usuario puede filtrar la lista por tipo de pokemon.
-    -Usuario puede hacer click en un pokemon y ver sus características.
+    Usuario puede ingresar a la aplicación.
+    Usuario puede filtrar la lista por tipo de pokemon.
+    Usuario puede hacer click en un pokemon y ver sus características.
 
 
 ### Historia de usuario n°2
 
-    "YO: jugador de pokemon Go 
+     YO: jugador de pokemon Go 
      QUIERO: Saber cuántos caramelos necesito 
-     PARA: poder evolucionar mi pokemon. "
+     PARA: poder evolucionar mi pokemon. 
 
-  # Criterios de aceptación:
+  ### Criterios de aceptación:
 
     -
     -
@@ -80,11 +80,11 @@ Las historias de usuario están basadas en las necesidades que tiene el usuario 
 
 ### Historia de usuario n°3
 
-    "YO: jugador de pokemon Go 
+     YO: jugador de pokemon Go 
      QUIERO: saber las evoluciones 
-     PARA: Saber en qué evoluciona mi pokemon."
+     PARA: Saber en qué evoluciona mi pokemon.
 
-   # Criterios de aceptación:
+  ### Criterios de aceptación:
 
     -
     -
@@ -93,13 +93,13 @@ Las historias de usuario están basadas en las necesidades que tiene el usuario 
 
 *** 
 
-### Prototipos
+## Prototipos
 
 [Prototipo de alta calidad]( https://www.figma.com/proto/M9bUJm5R6pcHAjHthwYKYj/datago?node-id=11%3A237&scaling=scale-down),
 
 ***
 
-### Test de Usabilidad
+## Test de Usabilidad
   Realizamos testeo de usabilidad con el primer prototipo de alta fidelidad. Luego realizamos iteraciones.
  (PONER AQUÍ VIDEOS)
 
