@@ -32,11 +32,12 @@ for (let i = 0; i <= POKEMON.length; i++) {
 }
 
 //función de filtrado
-let filteredPokemon = POKEMON.filter(element => element.type.includes("Fire"));
-console.log("filteredPokemon => ", filteredPokemon);
-
-/*import {filteredPokemon} from './src/data.js';
+/*let filteredPokemon = POKEMON.filter(element => element.type.includes("Fire"));
 console.log("filteredPokemon => ", filteredPokemon);*/
+
+//probando import de función de filtrado
+//import {filteredPokemon} from './src/data.js';
+//console.log(filteredPokemon);
 
 
 
@@ -48,11 +49,21 @@ document.getElementById('playBtn').addEventListener('click', () => {
     document.getElementById('screenOne').style.display='none';
     
     //Declarando variable para imprimir pokemon
-    let print= document.getElementById ("pokemonList");
+   // let print= document.getElementById ("pokemonList");
     //imprimiendo nombre de primer pokemon
-    print.innerHTML= POKEMON[0].name;
-    
+    //print.innerHTML= `<p class=name> ${POKEMON[0].name}<p>`;
 
-//probando si funciona grasspokemon
-  grassPokemon ();
+    //probando recorrido
+    for (let i = 0; i <= POKEMON.length; i++) {
+        let completeList = [];
+        let print= document.getElementById ("pokemonList");
+        completeList.push(POKEMON[i].name);
+        print.innerHTML+= `<p class="name"> ${completeList}<p>`;
+    }
+})
+
+//obteniendo el valor seleccionado de la lista de opciones
+document.getElementById('selector').addEventListener('click',()=>{
+    let filterType = document.getElementById('selector').value;
+    document.getElementById('pokemonList').innerHTML= "you selected " + filterType;
 })
