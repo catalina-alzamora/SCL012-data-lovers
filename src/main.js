@@ -54,6 +54,10 @@ document.getElementById('playBtn').addEventListener('click', () => {
     //imprimiendo nombre de primer pokemon
     //print.innerHTML= `<p class=name> ${POKEMON[0].name}<p>`;
 
+    
+//probando si funciona grasspokemon
+  grassPokemon ();
+
     //probando recorrido
     for (let i = 0; i <= POKEMON.length; i++) {
         let completeList = [];
