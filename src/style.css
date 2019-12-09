@@ -5,7 +5,6 @@ body {
   background-size: cover;   
 }
 
-
 .contenedor {
   width: 100%;
   max-width: 1200px;
@@ -17,9 +16,10 @@ body {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  margin-left: 50px;
 }
 
-.logo {
+.pikachu {
   display:flex;
   align-items:flex-end;
   justify-content:flex-start;
@@ -35,29 +35,47 @@ h1 {
   border-radius: 30px;
   align-items:center ; 
   text-align: center;
+  margin-left: 50px;
+}
+
+#playBtn{
+  display: flex;
+  width:80px;
+  height:80px;
+  background-color:#ffffff;
+  margin: 5px;
+  padding:10px;
+  border-radius: 50px;
+  font-size:25px;
+  font-family: 'Abel', sans-serif;
+  margin-left: 285px;
+}
+
+#playBtn:hover{
+  opacity: 0.80;
+  background-color: rgb(252, 1, 1);
+  color: white
 }
 
 #screenTwo{
   visibility:hidden; 
-  display:none;
+  display:none;  
 }
 
-#playBtn{
-  width:80px;
-  height:80px;
-  background-color:#88c481;
-  margin: 5px;
-  padding:10px;
-  border-radius: 50px;
-  font-size:11px;
-}
-#playBtn:hover{
-  opacity: 0.50;
-  background-color: rgb(16, 207, 80);
-  
+select {
+  display: flex;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  font-size: 16px;
+  font-family:'Abel', sans-serif;
+  height: 30px;
+  padding: 5px;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 50px;
 }
 
-
-
-
+select:focus{ 
+  outline: none;
+}
 

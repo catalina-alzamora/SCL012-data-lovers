@@ -41,6 +41,7 @@ console.log("filteredPokemon => ", filteredPokemon);*/
 
 
 
+
     //función de cambio de pantalla con el botón de ingresar
 document.getElementById('playBtn').addEventListener('click', () => {
     document.getElementById('screenTwo').style.visibility='visible';
@@ -53,6 +54,10 @@ document.getElementById('playBtn').addEventListener('click', () => {
     //imprimiendo nombre de primer pokemon
     //print.innerHTML= `<p class=name> ${POKEMON[0].name}<p>`;
 
+    
+//probando si funciona grasspokemon
+  grassPokemon ();
+
     //probando recorrido
     for (let i = 0; i <= POKEMON.length; i++) {
         let completeList = [];
@@ -60,6 +65,7 @@ document.getElementById('playBtn').addEventListener('click', () => {
         completeList.push(POKEMON[i].name);
         print.innerHTML+= `<p class="name"> ${completeList}<p>`;
     }
+
 })
 
 //obteniendo el valor seleccionado de la lista de opciones
