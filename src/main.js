@@ -1,46 +1,11 @@
 
-import  POKEMON  from './data/pokemon/pokemon.js';
+import  POKEMON from './data/pokemon/pokemon.js';
 
-//probando si sale el objeto bulbasaur
-console.log(POKEMON [0]);
+import {example, pokemonTypes} from './data.js'
 
-//viendo keys de bulbasaur
-console.log(Object.keys(POKEMON [0]));
-/*Keys de cada pokemon:
-"id", "num", "name", "img", "type", "height", "weight", "candy", "candy_count", "egg", "spawn_chance",
- "avg_spawns", "spawn_time", "multipliers", "weaknesses", "next_evolution"*/
+//import pokemonTypes from '/data.js'
 
-//viendo valor de key-tipo de bulbasaur
-console.log(POKEMON[0].type);
-
-
-
-/*Probando si recorre
-for (let i = 0; i <= POKEMON.length; i++) {
-    console.log(POKEMON[i].type);
-}
-*/
-//probando hacer arreglo con pokemons tipo planta
-function filterByGrass(POKEMON){
-let grassPokemon = [];
-for (let i = 0; i <= POKEMON.length; i++) {
-    if ((POKEMON[i].type).includes("Grass")) {
-     grassPokemon.push(POKEMON[i]);  
-     console.log(grassPokemon)
-    }}    
-   return grassPokemon
-}
-
-//función de filtrado
-/*let filteredPokemon = POKEMON.filter(element => element.type.includes("Fire"));
-console.log("filteredPokemon => ", filteredPokemon);*/
-
-//probando import de función de filtrado
-//import {filteredPokemon} from './src/data.js';
-//console.log(filteredPokemon);
-
-
-
+console.log(example())
 
     //función de cambio de pantalla con el botón de ingresar
 document.getElementById('playBtn').addEventListener('click', () => {
@@ -48,28 +13,44 @@ document.getElementById('playBtn').addEventListener('click', () => {
     document.getElementById('screenTwo').style.display='block';
     document.getElementById('screenOne').style.visibility='hidden';
     document.getElementById('screenOne').style.display='none';
-    
-    //Declarando variable para imprimir pokemon
-   // let print= document.getElementById ("pokemonList");
-    //imprimiendo nombre de primer pokemon
-    //print.innerHTML= `<p class=name> ${POKEMON[0].name}<p>`;
+   
 
-    
-//probando si funciona grasspokemon
-  grassPokemon ();
-
-    //probando recorrido
-    for (let i = 0; i <= POKEMON.length; i++) {
+    //poniendo lista de pokemon al html:
+        //recorriendo arreglo para imprimir en html
+    for (let i = 0; i < POKEMON.length; i++) {
+        //creando nuevo arreglo
         let completeList = [];
-        let print= document.getElementById ("pokemonList");
+        //llamando lugar en html donde se va a imprimir
+        let print= document.getElementById ("list");
+        //agregando nombre de cada pokemon al nuevo arreglo
         completeList.push(POKEMON[i].name);
+        //imprimiendo arreglo nuevo
         print.innerHTML+= `<p class="name"> ${completeList}<p>`;
     }
 
 })
 
-//obteniendo el valor seleccionado de la lista de opciones
+//filtrado de pokemon según lista de opciones:
+
+/*//función de filtrado
+function filteredPokemon(item, selectedType){
+    return POKEMON.filter (item => item.type.includes(selectedType));
+} 
+*/
+    //agregando evento click a la barra de selección
 document.getElementById('selector').addEventListener('click',()=>{
+
+    //guardando el valor de lo seleccionado
     let filterType = document.getElementById('selector').value;
-    document.getElementById('pokemonList').innerHTML= "you selected " + filterType;
+    document.getElementById("xd").innerHTML="";
+    
+    // usando función con filterType
+    pokemonTypes(filterType);
+    for (let i = 0; i < POKEMON.length; i++) {
+        document.getElementById("xd").innerHTML = `<p class="name"> ${pokemon[i].name}<p>`;
+console.log(pokemonTypes())
+   console.log( pokemonTypes(pokemonTypes) );
+   //console.log(pokemonTypes)
+   
+    }
 })
