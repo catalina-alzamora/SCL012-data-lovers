@@ -41,7 +41,7 @@ Esta aplicación esta creada para jugadores principiantes, que no tengan mucho c
 Trabajamos con esta información.
   * [Investigación con jugadores de Pokémon Go](/src/data/pokemon/README.md)
 Además, realizamos una encuesta para conocer los datos más requeridos por los usuarios.
- * [Encuesta](PONER AQUÍ EL LINK DE LA ENCUESTA)
+ * [Encuesta](https://docs.google.com/forms/d/1A7PbRXvtuqibHezhHK4Vnfy-BH_RQx6fwVYxbT7zYq8/edit#response=ACYDBNhKXB2C3jObFocfhslCVidxrFNnmNz_dOyJWbBS)
 
 *** 
 
@@ -92,6 +92,14 @@ Las historias de usuario están basadas en las necesidades que tiene el usuario 
 
 
 *** 
+## Sketch 
+
+* Para Celular
+
+
+* Para Web 
+
+
 
 ## Prototipos
 

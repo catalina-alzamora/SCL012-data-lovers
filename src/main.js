@@ -48,6 +48,7 @@ document.getElementById('playBtn').addEventListener('click', () => {
     document.getElementById('screenTwo').style.display='block';
     document.getElementById('screenOne').style.visibility='hidden';
     document.getElementById('screenOne').style.display='none';
+    let container= document.getElementById("probando")
     
     //Declarando variable para imprimir pokemon
    // let print= document.getElementById ("pokemonList");
@@ -55,15 +56,16 @@ document.getElementById('playBtn').addEventListener('click', () => {
     //print.innerHTML= `<p class=name> ${POKEMON[0].name}<p>`;
 
     
-//probando si funciona grasspokemon
-  grassPokemon ();
-
     //probando recorrido
-    for (let i = 0; i <= POKEMON.length; i++) {
-        let completeList = [];
-        let print= document.getElementById ("pokemonList");
-        completeList.push(POKEMON[i].name);
-        print.innerHTML+= `<p class="name"> ${completeList}<p>`;
+    for (let i = 0; i < POKEMON.length; i++) {
+        
+        container.innerHTML+=
+
+        `<div class="cajitaPokemon">
+        <div> <img class="imagen" src= "${POKEMON[i].img}"><div>
+        <div class="pokemonCard">    ${POKEMON[i].name}<div>
+        </div>`
+        console.log(POKEMON)
     }
 })
 

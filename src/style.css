@@ -2,17 +2,26 @@
 body {
   background-image: url("img/fondo.png");
   background-repeat: no-repeat; 
-  background-size: cover;   
+  background-size: cover; 
+  background-attachment: fixed;  
 }
+
+.probando {
+  text-align: center;
+}
+
 
 .contenedor {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   margin:50px auto;
+
 }
 
-.header {
+.logo {
   display:flex;
+  width: 200px;
+  height: 200px;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -24,18 +33,21 @@ body {
   align-items:flex-end;
   justify-content:flex-start;
   flex-direction: column;
+  align-self: flex-start;
 }
 
 h1 {
   display: flex;
   width: 550px;
   height: 150px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.541);
   font-family: 'Abel', sans-serif;
   border-radius: 30px;
   align-items:center ; 
   text-align: center;
+  justify-content: flex-start;
   margin-left: 50px;
+
 }
 
 #playBtn{
@@ -49,6 +61,7 @@ h1 {
   font-size:25px;
   font-family: 'Abel', sans-serif;
   margin-left: 285px;
+  
 }
 
 #playBtn:hover{
@@ -58,6 +71,7 @@ h1 {
 }
 
 #screenTwo{
+  background-attachment: fixed;
   visibility:hidden; 
   display:none;  
 }
@@ -66,16 +80,40 @@ select {
   display: flex;
   background: rgb(255, 255, 255);
   border-radius: 20px;
-  font-size: 16px;
-  font-family:'Abel', sans-serif;
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
   height: 30px;
   padding: 5px;
-  width: 250px;
-  margin-top: 30px;
-  margin-left: 50px;
+  margin-top: 40px;
+  margin-left: 60px;
+  width: 200px;
 }
 
 select:focus{ 
   outline: none;
 }
 
+
+.cajitaPokemon {
+  height: 10em;
+  width: 10em;
+  background-color: rgb(255, 255, 255);
+  margin: 12px 10px 12px 10px;
+  text-align:center ;
+  justify-items: center;
+  display:inline-flex;
+  border-radius: 20px;
+  font-size:18px ;
+  padding-top: 40px;
+  font-family:'Josefin Sans', sans-serif;
+  text-align: center;
+  
+}
+
+.imagen{
+  width:7em ;
+  height: auto;
+  display: flex;
+  padding-left: 20px;
+
+}
