@@ -1,14 +1,7 @@
 
 import  POKEMON from './data/pokemon/pokemon.js';
 
-//import {example} from './data.js'
-
-document.getElementById('playBtn').addEventListener('click', () => {
-
-  console.log("el click funciona");
-});
-//console.log(example())
-//console.log(filtered())
+import {filtered} from './data.js'
 
     //función de cambio de pantalla con el botón de ingresar
 document.getElementById('playBtn').addEventListener('click', () => {
@@ -17,50 +10,47 @@ document.getElementById('playBtn').addEventListener('click', () => {
     document.getElementById('screenOne').style.visibility='hidden';
     document.getElementById('screenOne').style.display='none';
 
-    //llamando id de div en html
-    let container= document.getElementById('probando')
+    //guardando div de html en variable
+    let container= document.getElementById('pokemon')
     
     //recorriendo arreglo
     for (let i = 0; i < POKEMON.length; i++) {
-        //imprimiendo en Html
-        container.innerHTML+=
 
+        //imprimiendo nombre e imagen de cada pokemon en Html
+        container.innerHTML+=
         `<div class='cajitaPokemon'>
         <div> <img class='imagen' src= "${POKEMON[i].img}"><div>
-        <div class='pokemonCard'>    ${POKEMON[i].name}<div>
+        <div class='nombre'>    ${POKEMON[i].name}<div>
         </div>`
-      //  console.log(POKEMON)
     }
 })
 
-/*
-    //agregando función de filtrado a la barra de selección
-document.getElementById('selector').addEventListener('change',()=>{
+    //agregando función de filtrado a la barra de selección de tipo de pokemon
+document.getElementById('selectorType').addEventListener('change',()=>{
 
     //vaciando contenedor
-   document.getElementById('probando').innerHTML="";
+   document.getElementById('pokemon').innerHTML="";
 
-    //guardando el valor de lo seleccionado
-    let filterType = document.getElementById('selector').value;
-  console.log('filterType');
-    // usando función con filterType
-   let filtered = (pokemon, userfilter) => {
-        let result = pokemon.filter(element => {
-          return element.type.includes(userfilter);
-        });
-        return result;
-      };
-    let chosenType = filtered(POKEMON, filterType);
+    //guardando el tipo de pokemon seleccionado
+    let filterType = document.getElementById('selectorType').value;
+  console.log(filterType);
+
+    // función de filtrado está en data.
+
+    //guardando lista de pokemon filtrados en una variable
+    let chosenType = (filtered (filterType));
+
+    //recorriendo la lista de pokemon filtrados
     for (let i = 0; i < chosenType.length; i++) {
-    document.getElementById('probando').innerHTML += `
+
+    //imprimiendo lista de pokemon en html
+    document.getElementById('pokemon').innerHTML += `
     <div class='cajitaPokemon'>
     <div> <img class='imagen' src= "${chosenType[i].img}"><div>
-    <div class='pokemonCard'>    ${chosenType[i].name}<div>
+    <div class='nombre'>    ${chosenType[i].name}<div>
     </div>`
-
 }})
 
-*/
 /*//función abriendo ventana
 document.getElementById('')
 document.getElementById('pokemon').innerHTML = `

@@ -1,17 +1,9 @@
-/* Manejo de data */
 
-// esta es una función de ejemplo
+import  POKEMON from './data/pokemon/pokemon.js';
 
-//export const example = () => {
- // console.log('hola')
-  //return 'chao';
-//};
-
-//Función de filtrado. 
-/*export let filtered = (pokemon, userfilter) => {
-  let result = pokemon.filter(element => {
-    return element.type.includes(userfilter);
-  });
+export const filtered = (filterType) => {
+  let result = POKEMON.filter(element => {
+    return element.type.includes(filterType);
+});
   return result;
 };
-*/
