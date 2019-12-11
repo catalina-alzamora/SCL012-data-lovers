@@ -34,8 +34,9 @@ document.getElementById('selectorType').addEventListener('change',()=>{
     //guardando el tipo de pokemon seleccionado
     let filterType = document.getElementById('selectorType').value;
   console.log(filterType);
-    // función de filtrado 
-    
+
+    // función de filtrado está en data.
+
     //guardando lista de pokemon filtrados en una variable
     let chosenType = (filtered (filterType));
 
