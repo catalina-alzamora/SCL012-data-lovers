@@ -1,4 +1,3 @@
-
 import  POKEMON from './data/pokemon/pokemon.js';
 
 export const filtered = (filterType) => {
@@ -6,4 +5,7 @@ export const filtered = (filterType) => {
     return element.type.includes(filterType);
 });
   return result;
+
 };
+
+

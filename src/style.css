@@ -5,7 +5,6 @@ body {
   background-attachment: fixed;  
 }
 
-
 .logo {
   display:flex;
   width: 200px;
@@ -90,29 +89,32 @@ select:focus{
   outline: none;
 }
 
-
-
 .cajitaPokemon {
-  height: 10em;
-  width: 10em;
+  height: 150px;
+  width: 150px;
   background-color: rgb(255, 255, 255);
-  margin: 12px 10px 12px 10px;
+  margin: 10px 10px 10px 10px;
   text-align:center ;
   justify-items: center;
   display:inline-flex;
   border-radius: 20px;
   font-size:18px ;
-  padding-top: 40px;
-  font-family:'Josefin Sans', sans-serif;
+  padding-top: 10px;
   text-align: center;
-  margin-left: 65px;
-  
+  margin-left: 55px;  
 }
 
 .imagen{
-  width:7em ;
+  width:5em ;
   height: auto;
   display: flex;
-  padding-left: 20px;
-
+  padding-left: 35px;
+  padding-top: 5px;
 }
+
+.nombre{
+  font-family:'Josefin Sans', sans-serif;
+  font-size:18px ;
+  text-align: center;
+}
+
