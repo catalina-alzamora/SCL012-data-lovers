@@ -1,11 +1,14 @@
 
 import  POKEMON from './data/pokemon/pokemon.js';
 
-import {example, pokemonTypes} from './data.js'
+//import {example} from './data.js'
 
-//import pokemonTypes from '/data.js'
+document.getElementById('playBtn').addEventListener('click', () => {
 
-console.log(example())
+  console.log("el click funciona");
+});
+//console.log(example())
+//console.log(filtered())
 
     //función de cambio de pantalla con el botón de ingresar
 document.getElementById('playBtn').addEventListener('click', () => {
@@ -14,63 +17,56 @@ document.getElementById('playBtn').addEventListener('click', () => {
     document.getElementById('screenOne').style.visibility='hidden';
     document.getElementById('screenOne').style.display='none';
 
-    let container= document.getElementById("probando")
+    //llamando id de div en html
+    let container= document.getElementById('probando')
     
-    //Declarando variable para imprimir pokemon
-   // let print= document.getElementById ("pokemonList");
-    //imprimiendo nombre de primer pokemon
-    //print.innerHTML= `<p class=name> ${POKEMON[0].name}<p>`;
-
-    
-    //probando recorrido
+    //recorriendo arreglo
     for (let i = 0; i < POKEMON.length; i++) {
-        
+        //imprimiendo en Html
         container.innerHTML+=
 
-        `<div class="cajitaPokemon">
-        <div> <img class="imagen" src= "${POKEMON[i].img}"><div>
-        <div class="pokemonCard">    ${POKEMON[i].name}<div>
+        `<div class='cajitaPokemon'>
+        <div> <img class='imagen' src= "${POKEMON[i].img}"><div>
+        <div class='pokemonCard'>    ${POKEMON[i].name}<div>
         </div>`
-        console.log(POKEMON)
-
-   
-
-    //poniendo lista de pokemon al html:
-        //recorriendo arreglo para imprimir en html
-    for (let i = 0; i < POKEMON.length; i++) {
-        //creando nuevo arreglo
-        let completeList = [];
-        //llamando lugar en html donde se va a imprimir
-        let print= document.getElementById ("list");
-        //agregando nombre de cada pokemon al nuevo arreglo
-        completeList.push(POKEMON[i].name);
-        //imprimiendo arreglo nuevo
-        print.innerHTML+= `<p class="name"> ${completeList}<p>`;
-
+      //  console.log(POKEMON)
     }
 })
 
-//filtrado de pokemon según lista de opciones:
+/*
+    //agregando función de filtrado a la barra de selección
+document.getElementById('selector').addEventListener('change',()=>{
 
-/*//función de filtrado
-function filteredPokemon(item, selectedType){
-    return POKEMON.filter (item => item.type.includes(selectedType));
-} 
-*/
-    //agregando evento click a la barra de selección
-document.getElementById('selector').addEventListener('click',()=>{
+    //vaciando contenedor
+   document.getElementById('probando').innerHTML="";
 
     //guardando el valor de lo seleccionado
     let filterType = document.getElementById('selector').value;
-    document.getElementById("xd").innerHTML="";
-    
+  console.log('filterType');
     // usando función con filterType
-    pokemonTypes(filterType);
-    for (let i = 0; i < POKEMON.length; i++) {
-        document.getElementById("xd").innerHTML = `<p class="name"> ${pokemon[i].name}<p>`;
-console.log(pokemonTypes())
-   console.log( pokemonTypes(pokemonTypes) );
-   //console.log(pokemonTypes)
-   
-    }
-})
+   let filtered = (pokemon, userfilter) => {
+        let result = pokemon.filter(element => {
+          return element.type.includes(userfilter);
+        });
+        return result;
+      };
+    let chosenType = filtered(POKEMON, filterType);
+    for (let i = 0; i < chosenType.length; i++) {
+    document.getElementById('probando').innerHTML += `
+    <div class='cajitaPokemon'>
+    <div> <img class='imagen' src= "${chosenType[i].img}"><div>
+    <div class='pokemonCard'>    ${chosenType[i].name}<div>
+    </div>`
+
+}})
+
+*/
+/*//función abriendo ventana
+document.getElementById('')
+document.getElementById('pokemon').innerHTML = `
+<div class='cajitaPokemon'>
+    <div> <img class='imagen' src= "${chosenType[i].img}"><div>
+    <div class='pokemonCard'>    ${chosenType[i].name}<div>
+    </div>`
+    ver https://www.youtube.com/watch?v=RXTCrhos5w8
+    */
