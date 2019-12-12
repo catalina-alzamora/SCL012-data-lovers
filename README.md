@@ -95,15 +95,22 @@ Las historias de usuario están basadas en las necesidades que tiene el usuario 
 
 * Para Celular
 
-
+![Sketch] (https://github.com/JocelynJofreAntoine/SCL012-data-lovers/blob/master/src/img/celu.jpg?raw=true)
 
 * Para Web 
 
+![Sketch] (https://github.com/JocelynJofreAntoine/SCL012-data-lovers/blob/master/src/img/web.jpg?raw=true)
 
 
 ## Prototipos
 
-[Prototipo de alta calidad]( https://www.figma.com/proto/M9bUJm5R6pcHAjHthwYKYj/datago?node-id=11%3A237&scaling=scale-down),
+Prototipo de alta calidad Celular https://www.figma.com/proto/M9bUJm5R6pcHAjHthwYKYj/datago?node-id=11%3A237&scaling=scale-down
+
+Prototipo de alta calidad Web https://www.figma.com/proto/FvJbW32xEfRt09FdlptMBF/Untitled?node-id=3%3A0&scaling=scale-down
+
+
+
+
 
 ***
 
