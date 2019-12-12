@@ -104,9 +104,18 @@ Las historias de usuario están basadas en las necesidades que tiene el usuario 
 
 ## Prototipos
 
-Prototipo de alta calidad Celular https://www.figma.com/proto/M9bUJm5R6pcHAjHthwYKYj/datago?node-id=11%3A237&scaling=scale-down
+Prototipo baja calidad Celular 
+![Prototipo] (https://raw.githubusercontent.com/JocelynJofreAntoine/SCL012-data-lovers/master/src/img/ProtBC.PNG)
 
-Prototipo de alta calidad Web https://www.figma.com/proto/FvJbW32xEfRt09FdlptMBF/Untitled?node-id=3%3A0&scaling=scale-down
+![Prototipo] (https://github.com/JocelynJofreAntoine/SCL012-data-lovers/blob/master/src/img/ProtAC.PNG?raw=true)
+
+![Prototipo] (https://github.com/JocelynJofreAntoine/SCL012-data-lovers/blob/master/src/img/ProtACWeb.PNG?raw=true)
+
+Prototipo de alta calidad Celular 
+https://www.figma.com/proto/M9bUJm5R6pcHAjHthwYKYj/datago?node-id=11%3A237&scaling=scale-down
+
+Prototipo de alta calidad Web
+https://www.figma.com/proto/FvJbW32xEfRt09FdlptMBF/Untitled?node-id=3%3A0&scaling=scale-down
 
 
 
