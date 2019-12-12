@@ -20,7 +20,9 @@ document.getElementById('playBtn').addEventListener('click', () => {
         container.innerHTML+=
         `<div class='cajitaPokemon'>
         <div> <img class='imagen' src= "${POKEMON[i].img}"><div>
+        <div class='nombre'>   #${POKEMON[i].num}<div>
         <div class='nombre'>    ${POKEMON[i].name}<div>
+        <input type='button' value= 'Ver +'>
         </div>`
     }
 })
@@ -47,7 +49,9 @@ document.getElementById('selectorType').addEventListener('change',()=>{
     document.getElementById('pokemon').innerHTML += `
     <div class='cajitaPokemon'>
     <div> <img class='imagen' src= "${chosenType[i].img}"><div>
-    <div class='nombre'>    ${chosenType[i].name}<div>
+    <div class='nombre'>    #${chosenType[i].num}<div>
+    <div class='nombre'>    ${chosenType[i].name}<div>  
+    <input type='button' value= 'Ver +'>
     </div>`
 }})
 

@@ -22,10 +22,10 @@ body {
   flex-direction: column;
   align-self: flex-start;
   position: absolute;
-  width: 600px;
-  height: auto;
   left: 720px;
   top: 46px;
+  max-width:100%;
+  height:auto;
 }
 
 h1 {
@@ -89,10 +89,22 @@ select:focus{
   outline: none;
 }
 
+.recuadro {
+  display:flex;
+  width: 90%;
+  height: auto;
+  background-color:rgba(255, 255, 255, 0.281);
+  border-radius: 20px;
+  margin: 30px 30px 30px 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
 .cajitaPokemon {
-  height: 150px;
+  height: 210px;
   width: 150px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0.8);
   margin: 10px 10px 10px 10px;
   text-align:center ;
   justify-items: center;
@@ -101,9 +113,13 @@ select:focus{
   font-size:18px ;
   padding-top: 10px;
   text-align: center;
-  margin-left: 55px;  
+  margin-left: 70px;  
 }
 
+.cajitaPokemon:hover {
+  box-shadow: 4px 4px 8px rgb(59, 59, 59);
+
+}
 .imagen{
   width:5em ;
   height: auto;
@@ -116,5 +132,17 @@ select:focus{
   font-family:'Josefin Sans', sans-serif;
   font-size:18px ;
   text-align: center;
+  padding-top: 10px;
+}
+
+input {
+  font-family:'Josefin Sans', sans-serif;
+  font-size:12px ;
+  text-align: center;
+  width: 45px;
+  height: 25px;
+  border-radius: 10px;
+  margin: 12px 5px 5px 5px;
+  background-color: rgb(55, 235, 109);
 }
 

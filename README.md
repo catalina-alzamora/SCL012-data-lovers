@@ -6,7 +6,9 @@
  * Objetivos
  * Tipo de Usuario
  * Historias de Usuario
-
+ * Sketch
+ * Prototipo
+ * Test de Usabilidad
 
 ***
 
@@ -22,7 +24,6 @@ Poke GO es una aplicación, que esta diseñada para que los usuarios puedan cono
 
 ***
 
-
 ## Objetivos 
 
 El objetivo de esta aplicacion es que el usuario pueda conocer todos los datos que le interesan sobre su Pokemon de una forma sencilla.
@@ -34,7 +35,6 @@ El objetivo de esta aplicacion es que el usuario pueda conocer todos los datos q
 Esta aplicación esta creada para jugadores principiantes, que no tengan mucho conocimiento sobre el mundo Pokemon, siendo principalmente para uso de celular. 
 
 ***
-
 
 ## Investigación de Usuarios
 
@@ -48,7 +48,6 @@ Además, realizamos una encuesta para conocer los datos más requeridos por los 
 ## Historias de Usuario
 
 Las historias de usuario están basadas en las necesidades que tiene el usuario al momento de utilizar la app. 
-
 
 
 ### Historia de usuario n°1
@@ -95,6 +94,7 @@ Las historias de usuario están basadas en las necesidades que tiene el usuario 
 ## Sketch 
 
 * Para Celular
+
 
 
 * Para Web 
