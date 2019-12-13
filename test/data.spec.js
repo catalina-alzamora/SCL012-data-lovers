@@ -1,5 +1,5 @@
 // importamos la función `example`
-import { example, filtered } from "../src/data";
+import { example } from "../src/data";
 
 describe('example', () => {
 
@@ -11,4 +11,3 @@ describe('example', () => {
     // escribe aquí tu test
   });
 });
-
