@@ -15,25 +15,24 @@
 
 ## Introducción
 
-Pokémon GO es una aplicación que permite a los jugadores de esta poder acceder a distinta información sobre sus Pokémon, todo lo que necesiten saber pueden encontrarla en en esta app. 
+Poke GO es una aplicación que permite a los jugadores de esta poder acceder a distinta información sobre sus Pokémon, todo lo que necesiten saber pueden encontrarla en en esta app. 
 
 ***
 
 ## Definición del Producto
 
-Poke GO es una aplicación, que esta diseñada para que los usuarios puedan conocer toda la información de los Pokémon de la región Kanto. En esta el usuario podra acceder a distintos datos e imagenes de cada unos de los Pokemon, tambien podran filtrar según su tipo, orden alfabetico, número en la Pokedex, tambien podran algunos datos extras. 
-
+Poke GO es una aplicación, que esta diseñada para que los usuarios puedan conocer toda la información de los Pokémon de la región Kanto. El usuario podrá acceder a distintos datos e imágenes de cada unos de los Pokémon, también podrán filtrar según su tipo.
 ***
 
 ## Objetivos 
 
-El objetivo de esta aplicacion es que el usuario pueda conocer todos los datos que le interesan sobre su Pokemon de una forma sencilla.
+El objetivo de esta aplicación es que el usuario pueda conocer todos los datos que le interesan sobre su Pokémon de una forma sencilla.
 
 ***
 
 ## Tipo de Usuario
 
-Esta aplicación esta creada para jugadores principiantes, que no tengan mucho conocimiento sobre el mundo Pokemon, siendo principalmente para uso de celular. 
+Esta aplicación esta creada para jugadores principiantes, que no tengan mucho conocimiento sobre el mundo Pokémon, siendo principalmente para uso de celular. 
 
 ***
 
@@ -53,8 +52,8 @@ Las historias de usuario están basadas en las necesidades que tiene el usuario 
 
 ### Historia de usuario n°1
 
-    YO: jugador de pokemon Go.
-    QUIERO: saber los tipos de pokemon.
+    YO: jugador de Pokémon Go.
+    QUIERO: saber los tipos de pokémon.
     PARA: ver sus características.
 
 
@@ -89,10 +88,10 @@ Protitipo alta fidelidad Web
 
 
 
-Prototipo de alta fidelidad Celular, puedes interactuar en el siguiente link: 
+Prototipo de alta fidelidad para Celular, puedes interactuar en el siguiente link: 
 https://www.figma.com/proto/M9bUJm5R6pcHAjHthwYKYj/datago?node-id=11%3A237&scaling=scale-down
 
-Prototipo de alta fidelidad Web, puedes interactuar en el siguiente link: 
+Prototipo de alta fidelidad para Web, puedes interactuar en el siguiente link: 
 https://www.figma.com/proto/FvJbW32xEfRt09FdlptMBF/Untitled?node-id=3%3A0&scaling=scale-down
 
 
@@ -100,7 +99,7 @@ https://www.figma.com/proto/FvJbW32xEfRt09FdlptMBF/Untitled?node-id=3%3A0&scalin
 
 ## Test de Usabilidad
  
-Elegimos a distintos para realizar un test de usabilidad en cual podían darnos sus opiniones respecto a la aplicación. 
+Elegimos a distintas personas para realizar test de usabilidad para analizar sus opiniones respecto a la aplicación. 
 
 * Usuario  
 https://www.loom.com/share/f96002101a77409fbd4465df9a2efde5
@@ -109,7 +108,7 @@ https://www.loom.com/share/f96002101a77409fbd4465df9a2efde5
 ***
 
 ## Iteraciones
-Nuestro primer prototipo de alta fidelidad era el siguiente:
+Nuestro primer prototipo de alta fidelidad fue el siguiente:
 
 ![ Prototipo de alta fidelidad](/src/img/prototipoAFversion1.png)
 Luego de los testeos de usabilidad y una evaluación del diseño, redujimos la paleta de colores y pusimos un botón visible en el inicio.
