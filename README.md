@@ -78,22 +78,22 @@ Las historias de usuario están basadas en las necesidades que tiene el usuario 
 
 ## Prototipo
 
-Prototipo baja calidad Celular 
-![ prototipo](/src/img/ProtBC.png)
+Prototipo baja fidelidad Celular 
+![ sketch](/src/img/ProtBC.PNG)
 
-Protitipo alta calidad Celular
+Protitipo alta fidelidad Celular
 
-![ prototipo](/src/img/ProtAC.png)
+![ sketch](/src/img/ProtAC.PNG)
 
-Protitipo alta calidad Web
+Protitipo alta fidelidad Web
 
-![ prototipo](/src/img/ProtACWeb.png)
+![ sketch](/src/img/ProtACWeb.PNG)
 
 
-Prototipo de alta calidad Celular, puedes interactuar en el siguiente link: 
+Prototipo de alta fidelidad Celular, puedes interactuar en el siguiente link: 
 https://www.figma.com/proto/M9bUJm5R6pcHAjHthwYKYj/datago?node-id=11%3A237&scaling=scale-down
 
-Prototipo de alta calidad Web, puedes interactuar en el siguiente link: 
+Prototipo de alta fidelidad Web, puedes interactuar en el siguiente link: 
 https://www.figma.com/proto/FvJbW32xEfRt09FdlptMBF/Untitled?node-id=3%3A0&scaling=scale-down
 
 
@@ -103,11 +103,9 @@ https://www.figma.com/proto/FvJbW32xEfRt09FdlptMBF/Untitled?node-id=3%3A0&scalin
  
 Elegimos a distintos para realizar un test de usabilidad en cual podían darnos sus opiniones respecto a la aplicación. 
 
-* Usuario n°1 
+* Usuario  
+https://www.loom.com/share/f96002101a77409fbd4465df9a2efde5
 
-* Usuario n°2
-
-* Usuario n°3
 
 ***
 
