@@ -100,9 +100,8 @@ select:focus{
   padding-right: 30px;
 }
 
-
 .cajitaPokemon {
-  height: 210px;
+  height: 270px;
   width: 150px;
   background-color: rgb(255, 255, 255, 0.8);
   margin: 10px 10px 10px 10px;
@@ -117,10 +116,16 @@ select:focus{
 }
 
 .cajitaPokemon:hover {
-  box-shadow: 4px 4px 8px rgb(59, 59, 59);
-
+  background-color:rgba(147, 247, 177, 0.8)  ;
+  box-shadow: 4px 4px 8px rgb(12, 11, 11);
+  width: 164px;
+  height: 270px;
+  text-align: center;
+  padding-left: 20px;
+  transition:all .6s ease-in-out;
 }
-.imagen{
+
+.imagen {
   width:5em ;
   height: auto;
   display: flex;
@@ -128,21 +133,21 @@ select:focus{
   padding-top: 5px;
 }
 
-.nombre{
+h2 {
   font-family:'Josefin Sans', sans-serif;
   font-size:18px ;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 2px;
+  color:rgb(12, 87, 2);
 }
 
-input {
+h3 {
   font-family:'Josefin Sans', sans-serif;
-  font-size:12px ;
+  font-size:14px ;
   text-align: center;
-  width: 45px;
-  height: 25px;
-  border-radius: 10px;
-  margin: 12px 5px 5px 5px;
-  background-color: rgb(55, 235, 109);
+  padding-top: 3px;
+  color:black;
 }
+
+
 
