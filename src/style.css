@@ -1,11 +1,11 @@
-body {
+body{
   background-image: url("img/fondo.png");
   background-repeat: no-repeat; 
   background-size: cover; 
   background-attachment: fixed;  
 }
 
-.logo {
+.logo{
   display:flex;
   width: 200px;
   height: 200px;
@@ -15,7 +15,7 @@ body {
   margin-left: 50px;
 }
 
-.pikachu {
+.pikachu{
   display:flex;
   align-items:flex-end;
   justify-content:flex-start;
@@ -28,7 +28,7 @@ body {
   height:auto;
 }
 
-h1 {
+h1{
   display: flex;
   background-color: rgba(255, 255, 255, 0.541);
   font-family: 'Abel', sans-serif;
@@ -72,7 +72,7 @@ h1 {
   display:none;  
 }
 
-select {
+select{
   display: flex;
   background: rgb(255, 255, 255);
   border-radius: 20px;
@@ -89,7 +89,7 @@ select:focus{
   outline: none;
 }
 
-.recuadro {
+.whiteBox{
   display:flex;
   width: 90%;
   height: auto;
@@ -100,7 +100,7 @@ select:focus{
   padding-right: 30px;
 }
 
-.cajitaPokemon {
+.pokemonBox{
   height: 270px;
   width: 150px;
   background-color: rgb(255, 255, 255, 0.8);
@@ -115,7 +115,7 @@ select:focus{
   margin-left: 70px;  
 }
 
-.cajitaPokemon:hover {
+.pokemonBox:hover{
   background-color:rgba(147, 247, 177, 0.8)  ;
   box-shadow: 4px 4px 8px rgb(12, 11, 11);
   width: 164px;
@@ -125,7 +125,7 @@ select:focus{
   transition:all .6s ease-in-out;
 }
 
-.imagen {
+.pokeImg{
   width:5em ;
   height: auto;
   display: flex;
@@ -133,7 +133,7 @@ select:focus{
   padding-top: 5px;
 }
 
-h2 {
+h2{
   font-family:'Josefin Sans', sans-serif;
   font-size:18px ;
   text-align: center;
@@ -141,13 +141,10 @@ h2 {
   color:rgb(12, 87, 2);
 }
 
-h3 {
+h3{
   font-family:'Josefin Sans', sans-serif;
   font-size:14px ;
   text-align: center;
   padding-top: 3px;
   color:black;
 }
-
-
-
