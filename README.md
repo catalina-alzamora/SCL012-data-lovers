@@ -81,12 +81,10 @@ Las historias de usuario están basadas en las necesidades que tiene el usuario 
 Prototipo baja fidelidad Celular 
 ![ sketch](/src/img/ProtBC.PNG)
 
-Protitipo alta calidad Celular
-
+Protitipo alta fidelidad Celular
 ![ sketch](/src/img/ProtAC.PNG)
 
-Protitipo alta calidad Web
-
+Protitipo alta fidelidad Web
 ![ sketch](/src/img/ProtACWeb.PNG)
 
 
