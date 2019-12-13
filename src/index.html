@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -17,47 +16,46 @@
     <!-------------------------------------Pantalla 1-------------------------------->
     <div id="screenOne">
         <!----logotipo y pikachu------>
-        <div class="logo"><img src="img/logo.png"></div>
-        <div class="pikachu"><img src="img/pikachu.png"></div>
+      <div class="logo"><img src="img/logo.png" ></div>
+      <div class="pikachu"><img src="img/pikachu.png"></div>
 
-        <h1> ¡Atención entrenador Pokemon Go!
-          <br>
+      <h1> ¡Atención entrenador Pokemon Go!
+      <br>
           Encuentra aquí toda la información de tus pokemon.
-        </h1>
+      </h1>
         <!-------botón de inicio------>
-        <button class="play" id="playBtn">PLAY</button>
-      </div>
+      <button class="play" id="playBtn">PLAY</button>
     </div>
-    <!-------------------------------------Pantalla 2-------------------------------->
+  </div>
+  <!-------------------------------------Pantalla 2-------------------------------->
     <div id="screenTwo">
-                <div class="header">
-                  <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
-                </div>
-                    <!----barra de selección: tipo de pokemon---->
-                    <select name="types" id="selectorType">
-                        <option selected value="0">Filtrar por tipo</option>
-                        <option value="Grass">Planta</option>
-                        <option value="Fire">Fuego</option>
-                        <option value="Water">Agua</option>
-                        <option value="Ice">Hielo</option>
-                        <option value="Flying">Volador</option>
-                        <option value="Psychic">Psíquico</option>
-                        <option value="Poison">Veneno</option>
-                        <option value="Ground">Tierra</option>
-                        <option value="Rock">Roca</option>
-                        <option value="Electric">Electrico</option>
-                        <option value="Bug">Bicho</option>
-                        <option value="Normal">Normal</option>
-                        <option value="Fairy">Hada</option>
-                        <option value="Fighting">Lucha</option>
-                        <option value="Ghost">Fantasma</option>
-                        <option value="Dark">Siniestro</option>
-                        <option value="Dragon">Dragón</option>
-                        <option value="Steel">Acero</option>
-                      </select>
-            </div>
-            <!----Div para imprimir lista de pokemon-->
-            <div id="pokemon"></div>
+      <div class="header">
+        <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+      </div>
+  <!----barra de selección: tipo de pokemon---->
+      <select name="types" id="selectorType">
+      <option selected value="0">Filtrar por tipo</option>
+      <option value="Grass">Planta</option>
+      <option value="Fire">Fuego</option>
+      <option value="Water">Agua</option>
+      <option value="Ice">Hielo</option>
+      <option value="Flying">Volador</option>
+      <option value="Psychic">Psíquico</option>
+      <option value="Poison">Veneno</option>
+      <option value="Ground">Tierra</option>
+      <option value="Rock">Roca</option>
+      <option value="Electric">Eléctrico</option>
+      <option value="Bug">Bicho</option>
+      <option value="Normal">Normal</option>
+      <option value="Fighting">Lucha</option>
+      <option value="Ghost">Fantasma</option>
+      <option value="Dragon">Dragón</option>
+      </select>
+    </div>
+  <!----Div para imprimir lista de pokemon-->
+      <div class="whiteBox">
+      <div id="pokemon"></div>
+      </div>
     <script type="module" src="main.js"></script>
 </body>
 </html>
