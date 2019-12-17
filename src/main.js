@@ -33,7 +33,7 @@ document.getElementById('selectorType').addEventListener('change', () => {
   const filterType = document.getElementById('selectorType').value;
   // función de filtrado está en data.
   // guardando lista de pokemon filtrados en una variable
-  const chosenType = (filtered(filterType));
+  const chosenType = (filtered(POKEMON,filterType));
   // recorriendo la lista de pokemon filtrados
   for (let i = 0; i < chosenType.length; i++) {
     // imprimiendo lista de pokemon en html

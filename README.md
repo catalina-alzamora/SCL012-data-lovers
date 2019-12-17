@@ -103,6 +103,7 @@ Elegimos a distintas personas para realizar test de usabilidad para analizar sus
 
 * Usuario  
 https://www.loom.com/share/f96002101a77409fbd4465df9a2efde5
+https://www.loom.com/share/54d996b4116342b3857e84785eef17af
 
 
 ***
