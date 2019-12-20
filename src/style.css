@@ -149,3 +149,20 @@ h3{
   color:black;
 }
 
+#orderByName{
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  background: rgb(255, 255, 255);
+  height: 30px;
+  padding: 5px;
+  margin-top: 40px;
+  margin-left: 60px;
+  width: 200px;
+}
+
+@media screen and (max-width: 980px) {
+ .logo{
+ display:flex;
+ }
+
+}

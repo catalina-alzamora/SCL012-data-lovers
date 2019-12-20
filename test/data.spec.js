@@ -1,5 +1,5 @@
 // importamos la función `example`
-import { example, filtered } from "../src/data";
+import { example, filtered, ordering } from "../src/data";
 
 describe('example', () => {
 
@@ -17,6 +17,13 @@ describe('filtered', () => {
 
   it('debería ser una función', () => {
     expect(typeof filtered).toBe('function');
+  });
+});
+
+describe('ordering', () => {
+
+  it('debería ser una función', () => {
+    expect(typeof ordering).toBe('function');
   });
 });
 
@@ -42,6 +49,13 @@ const pokemonArray = [{
 describe('filtered', () => {
   it('Debería retornar "Pidgey" para pokemonArray y "Normal"', () => {
     expect(filtered(pokemonArray,'Normal')).toMatchObject([{"id": 16, "num": '016', "name": "Pidgey", "type": ["Normal","Flying"]}])
+  })
+});
+
+describe('ordering', () => {
+  it('Debería retornar "Beedrill" para la posición 0 de pokemonArray usando ordering', () => {
+    const sorted = ordering(pokemonArray, pokemonArray);
+    expect(sorted[0].name).toBe('Beedrill');
   })
 });
 

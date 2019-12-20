@@ -1,6 +1,6 @@
 
 import POKEMON from './data/pokemon/pokemon.js';
-import { filtered } from './data.js';
+import { filtered, ordering } from './data.js';
 
 // función de cambio de pantalla con el botón de ingresar
 document.getElementById('playBtn').addEventListener('click', () => {
@@ -9,10 +9,10 @@ document.getElementById('playBtn').addEventListener('click', () => {
   document.getElementById('screenOne').style.visibility = 'hidden';
   document.getElementById('screenOne').style.display = 'none';
 
-  // guardando div de html en variable
+  // guardando div de html 
   const container = document.getElementById('pokemon');
   for (let i = 0; i < POKEMON.length; i++) {
-    // imprimiendo imagen y datos de cada pokemon en Html
+    // imprimiendo imagen y datos de cada pokemon en html
     container.innerHTML += `<div class='pokemonBox'>
         <div> <img class='pokeImg' src='${POKEMON[i].img}'><div>
         <h2> #${POKEMON[i].num}</h2>
@@ -25,6 +25,24 @@ document.getElementById('playBtn').addEventListener('click', () => {
         </div>`;
   }
 });
+// Agregando función a botón de ordenar por nombre
+document.getElementById('orderByName').addEventListener('click',() => {
+  let pokemonOrdered = POKEMON.sort(ordering);
+  document.getElementById('pokemon').innerHTML = '';
+  for (let i = 0; i < pokemonOrdered.length; i++) {
+    document.getElementById('pokemon').innerHTML += `<div class='pokemonBox'>
+    <div> <img class='pokeImg' src='${pokemonOrdered[i].img}'><div>
+     <h2> #${pokemonOrdered[i].num}</h2>
+     <h2> ${pokemonOrdered[i].name}</h2>
+     <h3> Caramelos:${pokemonOrdered[i].candy}
+     <br>
+      Mide: ${pokemonOrdered[i].height}
+     <br>
+      Peso: ${pokemonOrdered[i].weight}</h3>
+    </div>`;
+}});
+
+
 // Agregando función de filtrado a la barra de selección de tipo de pokemon
 document.getElementById('selectorType').addEventListener('change', () => {
   // vaciando contenedor
@@ -49,3 +67,7 @@ document.getElementById('selectorType').addEventListener('change', () => {
     </div>`;
   }
 });
+
+
+
+ 
