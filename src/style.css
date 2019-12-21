@@ -4,74 +4,56 @@ body{
   background-size: cover; 
   background-attachment: fixed;  
 }
-
-.logo{
-  display:flex;
-  width: 200px;
-  height: 200px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 50px;
-}
-
-.pikachu{
-  display:flex;
-  align-items:flex-end;
-  justify-content:flex-start;
-  flex-direction: column;
-  align-self: flex-start;
-  position: absolute;
-  left: 720px;
-  top: 46px;
-  max-width:100%;
-  height:auto;
-}
-
-h1{
+#screenOne{
   display: flex;
-  background-color: rgba(255, 255, 255, 0.541);
-  font-family: 'Abel', sans-serif;
-  border-radius: 30px;
-  align-items:center ; 
-  text-align: center;
-  justify-content: flex-start;
-  margin-left:none;
-  position: absolute;
-  width: 544px;
-  height: 167px;
-  left: 110px;
-  top: 280px;
+  flex-flow: row wrap;
+  width: 100%;
 }
-
+.col-1{
+  flex:5;
+  width: 100%;
+  margin: 10px;
+}
+.section{
+  display: flex;
+  flex-flow: column wrap;
+  flex:1;
+}
 #playBtn{
   display: flex;
-  width:80px;
-  height:80px;
   background-color:#ffffff;
-  margin: 5px;
-  padding:10px;
   border-radius: 50px;
-  font-size:25px;
+  font-size:30px;
   font-family: 'Abel', sans-serif;
-  margin-left: 285 px;
-  position: absolute;
-  left: 340px;
-  top: 530px;
+  margin: 1% 50% 5% 37%;
+  padding: 2%;
 }
-
 #playBtn:hover{
   opacity: 0.80;
   background-color: rgb(252, 1, 1);
   color: white
 }
-
+#text{
+  background-color: rgba(255, 255, 255, 0.541);
+  font-family: 'Abel', sans-serif;
+  border-radius: 30px;
+  padding:4% 1% 2% 3%;
+  justify-content: flex-start;
+  height: auto;
+  margin: 5%;
+}
 #screenTwo{
   background-attachment: fixed;
   visibility:hidden; 
   display:none;  
 }
-
+nav{
+  display: flex;
+  flex-flow: row wrap;
+}
+#selectorType, #orderByName{
+  flex: 3;
+}
 select{
   display: flex;
   background: rgb(255, 255, 255);
@@ -84,11 +66,20 @@ select{
   margin-left: 60px;
   width: 200px;
 }
-
+#orderByName{
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  background: rgb(255, 255, 255);
+  height: 30px;
+  padding: 5px;
+  margin-top: 40px;
+  margin-left: 60px;
+  width: 200px;
+  align-self: center;
+}
 select:focus{ 
   outline: none;
 }
-
 .whiteBox{
   display:flex;
   width: 90%;
@@ -99,7 +90,6 @@ select:focus{
   padding-left: 30px;
   padding-right: 30px;
 }
-
 .pokemonBox{
   height: 270px;
   width: 150px;
@@ -114,7 +104,6 @@ select:focus{
   text-align: center;
   margin-left: 70px;  
 }
-
 .pokemonBox:hover{
   background-color:rgba(147, 247, 177, 0.8)  ;
   box-shadow: 4px 4px 8px rgb(12, 11, 11);
@@ -124,7 +113,6 @@ select:focus{
   padding-left: 20px;
   transition:all .6s ease-in-out;
 }
-
 .pokeImg{
   width:5em ;
   height: auto;
@@ -132,37 +120,45 @@ select:focus{
   padding-left: 35px;
   padding-top: 5px;
 }
-
-h2{
+.cardText{
   font-family:'Josefin Sans', sans-serif;
   font-size:18px ;
   text-align: center;
   padding-top: 2px;
   color:rgb(12, 87, 2);
 }
-
-h3{
+.cardTextTwo{
   font-family:'Josefin Sans', sans-serif;
   font-size:14px ;
   text-align: center;
   padding-top: 3px;
   color:black;
 }
-
-#orderByName{
-  border-radius: 20px;
-  font-family: 'Josefin Sans', sans-serif;
-  background: rgb(255, 255, 255);
-  height: 30px;
-  padding: 5px;
-  margin-top: 40px;
-  margin-left: 60px;
-  width: 200px;
+@media (min-width: 600px) {
+  .section{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #orderByName, #selectorType{
+    margin: 1% 8%;
+  }
 }
-
-@media screen and (max-width: 980px) {
- .logo{
- display:flex;
- }
-
+@media (max-width: 600px) {
+  #screenOne{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+  .col-1{
+    display: flex;
+    width: 100%;
+  }
+  #playBtn{
+    display: flex;
+    font-size:30px;
+    margin: 5% 2%;
+    padding: 3% 3% 4% 2%;
+    width: 20%;
+    align-self: center;
+  }
 }

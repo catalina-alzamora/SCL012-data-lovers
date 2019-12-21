@@ -15,9 +15,9 @@ document.getElementById('playBtn').addEventListener('click', () => {
     // imprimiendo imagen y datos de cada pokemon en html
     container.innerHTML += `<div class='pokemonBox'>
         <div> <img class='pokeImg' src='${POKEMON[i].img}'><div>
-        <h2> #${POKEMON[i].num}</h2>
-        <h2> ${POKEMON[i].name}</h2>
-        <h3> Caramelos: ${POKEMON[i].candy}
+        <h2 class="cardText"> #${POKEMON[i].num}</h2>
+        <h2 class="cardText"> ${POKEMON[i].name}</h2>
+        <h3 class="cardTextTwo"> Caramelos: ${POKEMON[i].candy}
         <br>
          Mide: ${POKEMON[i].height}
         <br>
@@ -32,9 +32,9 @@ document.getElementById('orderByName').addEventListener('click',() => {
   for (let i = 0; i < pokemonOrdered.length; i++) {
     document.getElementById('pokemon').innerHTML += `<div class='pokemonBox'>
     <div> <img class='pokeImg' src='${pokemonOrdered[i].img}'><div>
-     <h2> #${pokemonOrdered[i].num}</h2>
-     <h2> ${pokemonOrdered[i].name}</h2>
-     <h3> Caramelos:${pokemonOrdered[i].candy}
+     <h2 class="cardText"> #${pokemonOrdered[i].num}</h2>
+     <h2 class="cardText"> ${pokemonOrdered[i].name}</h2>
+     <h3 class="cardTextTwo"> Caramelos:${pokemonOrdered[i].candy}
      <br>
       Mide: ${pokemonOrdered[i].height}
      <br>
@@ -57,9 +57,9 @@ document.getElementById('selectorType').addEventListener('change', () => {
     // imprimiendo lista de pokemon en html
     document.getElementById('pokemon').innerHTML += `<div class='pokemonBox'>
     <div> <img class='pokeImg' src='${chosenType[i].img}'><div>
-     <h2> #${chosenType[i].num}</h2>
-     <h2> ${chosenType[i].name}</h2>
-     <h3> Caramelos:${chosenType[i].candy}
+     <h2 class="cardText"> #${chosenType[i].num}</h2>
+     <h2 class="cardText"> ${chosenType[i].name}</h2>
+     <h3 class="cardTextTwo"> Caramelos:${chosenType[i].candy}
      <br>
       Mide: ${chosenType[i].height}
      <br>
