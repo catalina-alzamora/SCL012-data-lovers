@@ -70,12 +70,10 @@ select{
   border-radius: 20px;
   font-family: 'Josefin Sans', sans-serif;
   background: rgb(255, 255, 255);
-  height: 30px;
-  padding: 5px;
+  padding: 1%;
   margin-top: 40px;
   margin-left: 60px;
   width: 200px;
-  align-self: center;
 }
 select:focus{ 
   outline: none;
@@ -156,9 +154,9 @@ select:focus{
   #playBtn{
     display: flex;
     font-size:30px;
-    margin: 5% 2%;
-    padding: 3% 3% 4% 2%;
-    width: 20%;
+    margin: 3%;
+    padding: 2% 2% 3% 5%;
+    width: 35%;
     align-self: center;
   }
 }
