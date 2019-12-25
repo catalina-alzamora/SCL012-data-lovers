@@ -42,7 +42,6 @@ document.getElementById('orderByName').addEventListener('click',() => {
     </div>`;
 }});
 
-
 // Agregando función de filtrado a la barra de selección de tipo de pokemon
 document.getElementById('selectorType').addEventListener('change', () => {
   // vaciando contenedor
@@ -67,7 +66,3 @@ document.getElementById('selectorType').addEventListener('change', () => {
     </div>`;
   }
 });
-
-
-
- 
