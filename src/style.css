@@ -122,6 +122,28 @@ select:focus{
   padding-top: 3px;
   color:black;
 }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  color: #8b8a8a;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  font-family: 'Raleway', sans-serif;
+}
+#upBtn{
+  margin-left: 50%;
+  background-color:#ffffff;
+  border-radius: 30px;
+  padding: 1%;
+
+}
 @media (min-width: 600px) {
   .section{
     display: flex;

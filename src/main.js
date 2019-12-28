@@ -2,16 +2,16 @@
 import POKEMON from './data/pokemon/pokemon.js';
 import { filtered, ascendingOrder } from './data.js';
 
-// función de cambio de pantalla con el botón de ingresar
+// Función de cambio de pantalla 
 document.getElementById('playBtn').addEventListener('click', () => {
   document.getElementById('screenTwo').style.visibility = 'visible';
   document.getElementById('screenTwo').style.display = 'block';
   document.getElementById('screenOne').style.visibility = 'hidden';
   document.getElementById('screenOne').style.display = 'none';
-  // guardando div de html 
+  // Guardando div de html 
   const container = document.getElementById('pokemon');
   for (let i = 0; i < POKEMON.length; i++) {
-    // imprimiendo imagen y datos de cada pokémon en html
+    // Imprimiendo imagen y datos de cada pokémon (lista completa) en html
     container.innerHTML += `<div class='pokemonBox'>
         <div> <img class='pokeImg' src='${POKEMON[i].img}'><div>
         <h2 class="cardText"> #${POKEMON[i].num}</h2>
@@ -69,4 +69,8 @@ document.getElementById('selectorType').addEventListener('change', () => {
       Peso: ${chosenType[i].weight}</h3>
     </div>`;
   }
+});
+// Función subir
+document.getElementById('upBtn').addEventListener("click",() => {
+  window.scrollTo(0,0);
 });
