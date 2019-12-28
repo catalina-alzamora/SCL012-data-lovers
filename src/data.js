@@ -21,5 +21,11 @@ export const ascendingOrder = (a, b) => {
   }
  };
 
-
+// Función buscar por nombre de pokémon
+export const nameSearch = (POKEMON,finalName) => {
+  const searched = POKEMON.filter((element) => {
+    return element.name.includes(finalName);
+  });
+  return searched;
+};
   

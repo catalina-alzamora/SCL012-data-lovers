@@ -1,6 +1,6 @@
 
 import POKEMON from './data/pokemon/pokemon.js';
-import { filtered, ascendingOrder } from './data.js';
+import { filtered, ascendingOrder, nameSearch } from './data.js';
 
 // Función de cambio de pantalla 
 document.getElementById('playBtn').addEventListener('click', () => {
@@ -24,16 +24,18 @@ document.getElementById('playBtn').addEventListener('click', () => {
         </div>`;
   }
 });
-//  función  ordenar por nombre
+//  Función  ordenar por nombre
 document.getElementById('orderByName').addEventListener('change',() => {
   const orderType = document.getElementById('orderByName').value;
   let pokemonOrdered = '';
-  // ordenando según lo seleccionado
   if(orderType === 'aToZ'){
     pokemonOrdered = POKEMON.sort(ascendingOrder);
   }
   if(orderType === 'zToA'){
     pokemonOrdered = POKEMON.sort(ascendingOrder).reverse();
+  }
+  else{
+    pokemonOrdered = POKEMON;
   }
   // imprimiendo
   document.getElementById('pokemon').innerHTML = '';
@@ -54,10 +56,14 @@ document.getElementById('orderByName').addEventListener('change',() => {
 document.getElementById('selectorType').addEventListener('change', () => {
   document.getElementById('pokemon').innerHTML = '';
   const filterType = document.getElementById('selectorType').value;
-  const chosenType = (filtered(POKEMON,filterType));
-  // recorriendo la lista de pokémon filtrados
+  let chosenType = '';
+  if(filterType === '0'){
+    chosenType = POKEMON;
+  }
+  else{
+    chosenType = (filtered(POKEMON,filterType));
+  }
   for (let i = 0; i < chosenType.length; i++) {
-    // imprimiendo lista de pokémon en html
     document.getElementById('pokemon').innerHTML += `<div class='pokemonBox'>
     <div> <img class='pokeImg' src='${chosenType[i].img}'><div>
      <h2 class="cardText"> #${chosenType[i].num}</h2>
@@ -68,6 +74,45 @@ document.getElementById('selectorType').addEventListener('change', () => {
      <br>
       Peso: ${chosenType[i].weight}</h3>
     </div>`;
+  }
+});
+// Función buscar por nombre de pokémon
+document.getElementById('okBtn').addEventListener('click', () => {
+  document.getElementById('pokemon').innerHTML = '';
+  const name = document.getElementById('search').value;
+  const finalName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+  let chosenName = (nameSearch(POKEMON,finalName));;
+for (let i = 0; i < chosenName.length; i++) {
+  document.getElementById('pokemon').innerHTML += `<div class='pokemonBox'>
+  <div> <img class='pokeImg' src='${chosenName[i].img}'><div>
+   <h2 class="cardText"> #${chosenName[i].num}</h2>
+   <h2 class="cardText"> ${chosenName[i].name}</h2>
+   <h3 class="cardTextTwo"> Caramelos:${chosenName[i].candy}
+   <br>
+    Mide: ${chosenName[i].height}
+   <br>
+    Peso: ${chosenName[i].weight}</h3>
+  </div>`;
+}
+});
+// Función mostrar lista completa
+document.getElementById('all').addEventListener('click', () => {
+  document.getElementById('pokemon').innerHTML = '';
+  document.getElementById('search').value = '';
+  document.getElementById('orderByName').value = 0;
+  document.getElementById('selectorType').value = 0;
+  const container = document.getElementById('pokemon');
+  for (let i = 0; i < POKEMON.length; i++) {
+    container.innerHTML += `<div class='pokemonBox'>
+        <div> <img class='pokeImg' src='${POKEMON[i].img}'><div>
+        <h2 class="cardText"> #${POKEMON[i].num}</h2>
+        <h2 class="cardText"> ${POKEMON[i].name}</h2>
+        <h3 class="cardTextTwo"> Caramelos: ${POKEMON[i].candy}
+        <br>
+         Mide: ${POKEMON[i].height}
+        <br>
+         Peso: ${POKEMON[i].weight}</h3> 
+        </div>`;
   }
 });
 // Función subir
