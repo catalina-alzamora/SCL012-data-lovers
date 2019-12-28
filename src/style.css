@@ -64,16 +64,6 @@ select{
   padding: 5px;
   margin-top: 40px;
   margin-left: 60px;
-  width: 200px;
-}
-#orderByName{
-  border-radius: 20px;
-  font-family: 'Josefin Sans', sans-serif;
-  background: rgb(255, 255, 255);
-  padding: 1%;
-  margin-top: 40px;
-  margin-left: 60px;
-  width: 200px;
 }
 select:focus{ 
   outline: none;
@@ -137,7 +127,7 @@ select:focus{
     display: flex;
     flex-flow: row wrap;
   }
-  #orderByName, #selectorType{
+  select{
     margin: 1% 8%;
   }
 }

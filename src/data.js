@@ -11,17 +11,15 @@ export const filtered = (POKEMON,filterType) => {
   return result;
 };
 
-//función de ordenar A-Z
-export const ordering = (a, b) => {
+// función de ordenar A-Z
+export const ascendingOrder = (a, b) => {
   if (a.name > b.name) {
     return 1;
   }
   if (a.name < b.name) {
     return -1;
   }
-  return 0;
  };
-
 
 
   
